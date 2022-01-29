@@ -130,6 +130,8 @@ public class PlayerEquips {
 
                 return false;
             }
+            this.handHeldItem = to;
+            to.apply(); // Can cause side effects ?
         } else {
             this.handHeldItem = to;
 
